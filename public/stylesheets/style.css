@@ -1,0 +1,16 @@
+.clear{clear:both;}
+.container{
+  width:960px;
+  margin:0 auto;
+}
+header{margin:20px 0;}
+header .nav li{float:left;}
+header .nav a{font-size:16px;font-weight:bold;}
+ul.posts{}
+.posts li{margin-bottom: 20px;}
+.posts li .title{width:760px;float:left;overflow:hidden;margin-bottom:20px;}
+.posts li span{float:right;width:160px;}
+.posts li a{color:#227CE8;text-decoration:none;font-size:20px;}
+.posts li a:hover{text-decoration:underline;}
+.post_detail{font-size:16px;}
+h1{font-size:46px;margin-bottom:14px;}

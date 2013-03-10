@@ -1,0 +1,24 @@
+<html>
+<head>
+  <title><%= title %></title>
+  <%= puts request.inspect %>
+  <link rel="stylesheet" href="/stylesheets/reset.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <ul class="nav">
+        <li><a href="/">Home</a>&nbsp;/&nbsp;</li>
+        <li><a href="/about">About Me</a>&nbsp;/&nbsp;</li>
+        <li><a href="/posts/new">New Post</a></li>
+        <% if post_show_page? %>
+          <li>&nbsp;/&nbsp;<a href="/posts/<%= @post.id %>/edit">Edit Post</a></li>
+          <li><%= delete_post_button(@post.id) %></li>
+        <% end %>
+      </ul>
+      <br class="clear">
+    </header>
+    <%= yield %>
+</body>
+</html>

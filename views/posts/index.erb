@@ -1,0 +1,9 @@
+<h1>Welcome to my blog!</h1>
+<ul class="posts">
+<% @posts.each do |post| %>
+  <li>
+    <div class="title"><a href="/posts/<%= post.id %>"><%= post.title %></a></div>
+    <span><%= format_date post.created_at %></span>
+  </li>
+<% end %>
+</ul>
